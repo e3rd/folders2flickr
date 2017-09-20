@@ -46,7 +46,20 @@ from xml.dom import minidom
 #
 # Location to scan for new images
 #
-IMAGE_DIR = configdict.get('imagedir')
+IMAGE_DIR = " ".join(sys.argv[1:])
+if IMAGE_DIR:
+  IMAGE_DIR = IMAGE_DIR
+else:
+  IMAGE_DIR = configdict.get('imagedir')  
+print "Using image dir: " + IMAGE_DIR
+  
+TOKEN_DIR = configdict.get('tokendir')
+if TOKEN_DIR:
+  print "Using token dir: " + TOKEN_DIR
+  os.chdir(TOKEN_DIR)
+else:
+  print "Using token dir: current directory" 
+
 #
 #   Flickr settings
 #

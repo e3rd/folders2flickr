@@ -3,7 +3,8 @@
 # Location to scan for new images (no trailing \)
 #
 # Example: imagedir = d:\pictures
-imagedir = 
+imagedir =
+tokendir =
 
 #
 # File we keep the history of uploaded images in.
@@ -20,13 +21,13 @@ family = 1
 # Hide from public searches (if not set, this is the default):
 hidden = 2
 
-# set this to true if name of the auto generated flickr sets should be only name of the last sub folder 
+# set this to true if name of the auto generated flickr sets should be only name of the last sub folder
 # e.g. Crete when folder is d:\testpictures\holidays\Crete\123img.jpg
 only_sub_sets  = false
 
-# set full_folder_tags to true if you wish to override the original (default) parsing 
+# set full_folder_tags to true if you wish to override the original (default) parsing
 # of folder tags and instead treat each sub-folder name as a complete tag.
-# Example: 
+# Example:
 # /path to/my picture/
 # false (Default), tags are parsed: "path" "to" "my" "picture"
 # true, tags are parsed: "path to" "my picture"
